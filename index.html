@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 101 Template</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+  <div class="container bs-cont">
+    <nav class="navbar navbar-default bs-navbar">
+      <div class="container-fluid">
+          <button id="menu-toggle" class="btn navbar-btn btn-default bs-nav-button" data-toggle="tooltip" data-placement="bottom" title="Hooray!">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+        <ol class="breadcrumb navbar-nav bs-bread">
+          <li><a href="#">Проект</a></li>
+          <li><a href="#">Тестовое задание</a></li>
+          <li class="active">Верстка на Bootstrap</li>
+        </ol>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>Гагарин Ю. А. <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Справка и поддержка</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Мобильные приложения</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-cog"></span>Настройки</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Выход из системы</a></li>
+              </ul>
+          </li>
+        </ul>
+        <!--Поиск-->
+        <div class="bs-searchi">
+          <button type="button" class="btn navbar-btn btn-lg bs-search" data-toggle="collapse" data-target="#search-collapse"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+        <div class="collapse container-fluid" id="search-collapse">
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">По разделу <span class="caret"></span></button>
+              <ul class="dropdown-menu dropdown-menu-left">
+                <li><a href="#">Пункт 1</a></li>
+                <li><a href="#">Пункт 2</a></li>
+                <li><a href="#">Пункт 3</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Пункт 4</a></li>
+              </ul>
+            </div><!-- /btn-group -->
+            <input type="text" class="form-control" aria-label="..." placeholder="Что ищем?">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Искать!</button>
+            </span>
+          </div><!--/input-group-->
+        </div><!--/collapse--><!--/Поиск-->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="row bs-table-header">
+      <h4>Это трехуровневая таблица, которая умеет сворачиваться и разворачиваться</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4 menu-side">
+        <div class="bs-menu">
+          <ul class="bs-menu-list clearfix">
+            <li class="bs-menu-item active"><a href="#"><span class="glyphicon glyphicon-home"></span><span class="to-hide hidden">Home</span></a></li>
+            <li class="bs-menu-item"><a href="#"><span class="glyphicon glyphicon-sunglasses"></span><span class="to-hide hidden">Spy</span></a></li>
+            <li class="bs-menu-item"><a href="#"><span class="glyphicon glyphicon-remove"></span><span class="to-hide hidden">Inactive</span></a></li>
+            <li class="bs-menu-item to-hide"><a href="#"><span class="glyphicon glyphicon-remove"></span><span class="to-hide hidden">Inactive</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8 table-side">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="bs-table_header">
+              <th class="bs-header1">Участок - адрес</th>
+              <th class="bs-header2">Л/с</th>
+              <th class="bs-header3">Тариф</th>
+              <th class="bs-header4" colspan="2">Оплаты в этом месяце</th>
+              <th class="bs-header5">Баланс</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-toggle="collapse" data-target="#table-collapse1" class="clickable collapsed">
+              <td>Тыгыдым</td>
+              <td>4444 4444 4444</td>
+              <td>120 444,44</td>
+              <td>- 444 444.44</td>
+              <td>50%</td>
+              <td>- 4 444 444.44</td>
+            </tr>
+            <tr>
+              <td colspan="6" class="hidden-row">
+                <div class="collapse" id="table-collapse1">
+                  <table class="table table-bordered table-hover bs-inner-table"><!--Вложенная таблица 1го уровня-->
+                  <tbody>
+                    <tr class="clickable" data-toggle="collapse" data-target="#table-collapse1-1" >
+                      <td>Малая дронная 28</td>
+                      <td>4444 4444 4444</td>
+                      <td>120 444,44</td>
+                      <td>- 444 444.44</td>
+                      <td>50%</td>
+                      <td>- 4 444 444.44</td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="hidden-row">
+                        <div class="collapse" id="table-collapse1-1">
+                          <table class="table table-bordered table-hover bs-inner-table"><!--Вложенная таблица 2го уровня-->
+                            <tbody>
+                              <tr class="bs-inner-table_header">
+                                <th class="bs-header2-1">Кв</th>
+                                <th class="bs-header2-2">ФИО</th>
+                                <th class="bs-header2-3">л/с</th>
+                                <th class="bs-header2-4">Статус</th>
+                                <th class="bs-header2-5">Долг</th>
+                              </tr>
+                              <tr class="clickable" data-toggle="collapse" data-target="#table-collapse2-1">
+                                <td>48</td>
+                                <td>Кондаков Алексей Прокофиевич</td>
+                                <td>4444 4444 4444 4444</td>
+                                <td>Оплачен</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>Кондаков Алексей Прокофиевич</td>
+                                <td>4444 4444 4444 4444</td>
+                                <td>Оплачен</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>48</td>
+                                <td>Кондаков Алексей Прокофиевич</td>
+                                <td>4444 4444 4444 4444</td>
+                                <td>Оплачен</td>
+                                <td>0</td>
+                              </tr>
+                              <tr class="bs-inner-table_footer">
+                                <th colspan="4">Оплачено в этом месяце: 444 444.44 (50%) | Не оплачено: 444 444.44</th>
+                                <th><a href="#" class="inner-closer"><span class="glyphicon glyphicon-triangle-top"></span></a></th>                                  
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td><!--Inside table-->
+                    </tr>
+                    <tr class="clickable" data-toggle="collapse" data-target="#table-collapse1-2">
+                      <td>Малая дронная 28</td>
+                      <td>4444 4444 4444</td>
+                      <td>120 444,44</td>
+                      <td>- 444 444.44</td>
+                      <td>50%</td>
+                      <td>- 4 444 444.44</td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="hidden-row">
+                        <div class="collapse" id="table-collapse1-2">
+                          <table class="table table-bordered table-hover bs-inner-table"><!--Вложенная таблица 2го уровня-->
+                            <tbody>
+                              <tr class="bs-inner-table_header">
+                                <th class="bs-header2-1">Кв</th>
+                                <th class="bs-header2-2">ФИО</th>
+                                <th class="bs-header2-3">л/с</th>
+                                <th class="bs-header2-4">Статус</th>
+                                <th class="bs-header2-5">Долг</th>
+                              </tr>
+                              <tr data-toggle="collapse" data-target="#table-collapse2-2" class="clickable">
+                                <td>48</td>
+                                <td>Кондаков Алексей Прокофиевич</td>
+                                <td>4444 4444 4444 4444</td>
+                                <td>Оплачен</td>
+                                <td>444 444.44</td>
+                              </tr>
+                              <tr class="bs-inner-table_footer">
+                                <th colspan="4">Оплачено в этом месяце: 444 444.44 (50%) | Не оплачено: 444 444.44</th>
+                                <th><a href="#" class="inner-closer"><span class="glyphicon glyphicon-triangle-top"></span></a></th>                                  
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td><!--Inside table-->
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </td><!--Inside table-->
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+  <div class="container bs-footer">
+    <h6>project © ПАО «Проект» 2002-20016</h6>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<!--Скрипты на кнопочки-->
+  <script src="js/wut.js"></script>
+</body>
+</html>

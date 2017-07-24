@@ -1,0 +1,111 @@
+th,table {text-align: center;}
+table td {transition: 150ms ease-in-out; empty-cells: hide;}
+table td:hover{background-color: #ccc;}
+.bs-navbar {margin-bottom: 40px;}
+.bs-nav-button>span {font-size: 24px;}
+.bs-table-header {margin-left: 40%;}
+.bs-bread>li {font-weight: bold;}
+.bs-bread .active {font-weight: normal;}	
+.bs-cont {height: 90vh;}
+.bs-nav-button {
+	float: left;
+	width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 10px auto 0;
+  padding: 1px 0;
+}       
+.bs-search {
+	background-color: inherit;
+	margin: 0;
+	padding-top: 14px;
+}
+.bs-search:active{
+	background-color: #e7e7e7;
+	color: white;
+}
+.bs-searchi {
+	display: block;
+	float: right;
+	background-color: inherit;
+}
+#search-collapse {
+	position: absolute;
+	float: right;
+	top: 51px;
+	width: inherit;
+}
+.bs-bread {
+	padding: 7px;
+	background-color: inherit;
+	margin: 8px 0;
+}
+li .glyphicon {
+	padding-right: 4px;
+	font-size: 16px;
+	top: 3px;
+}
+.bs-menu {
+	display: block;
+	position: relative;
+	float: left;
+}
+.bs-menu-list {
+	list-style: none;
+	background-color: #ccc;
+	border: 1px solid #aaa;
+	border-radius: 0 9px 9px 0;
+	padding: 0;
+}
+.bs-menu-item {
+	display: block;
+}
+.bs-menu-item.active {
+	border-top-right-radius: 9px; 
+	background-color: white;
+}
+.bs-menu-item>a {
+	display: block;
+	color: inherit;
+	width: inherit;
+	text-decoration: none;
+}
+.bs-menu-item span {
+	margin: 2px 10px 7px 10px;
+	font-size: 20px;
+}
+.bs-menu-item:nth-child(-n+3){
+	border-bottom: 1px solid #aaa;
+}
+.bs-footer {
+	position: relative;
+	border: 1px solid black;
+	padding: 10px 0;
+	text-align: center;
+	margin-bottom: 60px;
+}
+/***********************************************/
+.bs-inner-table {
+	margin: 0;}
+.hidden-row {
+	padding: 0 0 0 8px !important;}
+.hidden-row:hover {
+	background-color: white;}
+.bs-table_header {
+	background-color: #4e4e4e; color: #efefef;}
+.bs-inner-table_header,.bs-inner-table_footer {
+	background-color: #f5f5f5;}
+.bs-inner-table_footer th{
+	text-align: right;}
+/*Выделение активной строки таблицы*/
+tr[aria-expanded="true"] {
+	box-shadow: inset 0 -5px 20px rgba(0,0,0,0.3);
+	z-index: 1000;
+}
+/*Чтобы совпадали ячейки основной и первой вложенной таблицы*/
+.bs-header2-1{width:6.31%;}  .bs-header2-2{width: 34.654%;}.bs-header2-3{width:24.643%;}.bs-header2-5{width:16.222%;}/*.bs-header2-4{width:20%;}*/
+.bs-header1  {width:24.245%;}.bs-header2  {width: 19.754%;}.bs-header3  {width:14.643%;}.bs-header5  {width:18.222%;}/*.bs-header4{width:20%;}*/
+
+
+
+
